@@ -34,8 +34,15 @@ namespace ListManipulation
                         var index = int.Parse(cmd[1]);
                         nums.RemoveAt(index);
                         break;
-                   
-                        //TODO
+                    case "addMany":
+                        index = int.Parse(cmd[1]);
+                        for (int i = cmd.Count() - 1; i >= 2; i--)
+                        {
+                            nums.Insert(index, int.Parse(cmd[i]));
+                        }
+                        break;
+
+                    //TODO
                     case "print":
                         Console.WriteLine(string.Join(' ', nums));
                         break;
