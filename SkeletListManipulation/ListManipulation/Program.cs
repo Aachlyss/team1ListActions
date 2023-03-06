@@ -34,6 +34,9 @@ namespace ListManipulation
                     case "print":
                         Console.WriteLine(string.Join(' ', nums));
                         break;
+                    case "printodds":
+                        Console.WriteLine(string.Join(' ', nums.Where(x => x % 2 != 0)));
+                        break;
                     default:
                         break;
                 }
