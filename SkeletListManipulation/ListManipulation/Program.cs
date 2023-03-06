@@ -29,8 +29,10 @@ namespace ListManipulation
                     case "remove":
                         //TODO
                         break;
-                   
-                        //TODO
+                    case "countodds":
+                        Console.WriteLine("Count odds :)");
+                        break;
+                    //TODO
 
                     default:
                         break;
