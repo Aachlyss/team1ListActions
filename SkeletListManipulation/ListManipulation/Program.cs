@@ -23,17 +23,32 @@ namespace ListManipulation
                         nums.Add(int.Parse(cmd[1]));
                         Console.WriteLine(string.Join(" ", nums));
                         break;
-                   case "delete":
-                        //TODO
+                    case "delete":
+                        if (nums.Contains(command[1]))
+                        {
+                            nums.Remove(command[1]);
+                        }
+                        //DUSHI
                         break;
                     case "remove":
-                        //TODO
+                        var index = int.Parse(cmd[1]);
+                        nums.RemoveAt(index);
                         break;
-                    case "countodds":
-                        Console.WriteLine("Count odds :)");
+                    case "addMany":
+                        index = int.Parse(cmd[1]);
+                        for (int i = cmd.Count() - 1; i >= 2; i--)
+                        {
+                            nums.Insert(index, int.Parse(cmd[i]));
+                        }
                         break;
-                    //TODO
 
+                    //TODO
+                    case "print":
+                        Console.WriteLine(string.Join(' ', nums));
+                        break;
+                    case "printodds":
+                        Console.WriteLine(string.Join(' ', nums.Where(x => x % 2 != 0)));
+                        break;
                     default:
                         break;
                 }
@@ -42,3 +57,4 @@ namespace ListManipulation
         }
     }
 }
+
