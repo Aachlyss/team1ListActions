@@ -41,6 +41,9 @@ namespace ListManipulation
                             nums.Insert(index, int.Parse(cmd[i]));
                         }
                         break;
+                    case "odds":
+                        Console.WriteLine("SUIIIIIIII");
+                        break;
 
                     //TODO
                     case "print":
