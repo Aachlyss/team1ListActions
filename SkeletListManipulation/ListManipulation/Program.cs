@@ -24,7 +24,10 @@ namespace ListManipulation
                         Console.WriteLine(string.Join(" ", nums));
                         break;
                    case "delete":
-                        //TODO
+                        if (nums.Contains(command[1]))
+                        {
+                            nums.Remove(command[1]);
+                        }
                         break;
                     case "remove":
                         //TODO
