@@ -31,7 +31,9 @@ namespace ListManipulation
                         break;
                    
                         //TODO
-
+                    case "print":
+                        Console.WriteLine(string.Join(' ', nums));
+                        break;
                     default:
                         break;
                 }
