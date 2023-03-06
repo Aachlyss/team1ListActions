@@ -28,9 +28,10 @@ namespace ListManipulation
                         {
                             nums.Remove(command[1]);
                         }
-                        break;
+                            break;
                     case "remove":
-                        //TODO
+                        var index = int.Parse(cmd[1]);
+                        nums.RemoveAt(index);
                         break;
                    
                         //TODO
