@@ -28,6 +28,7 @@ namespace ListManipulation
                         {
                             nums.Remove(command[1]);
                         }
+                        //DUSHI KURO
                             break;
                     case "remove":
                         var index = int.Parse(cmd[1]);
