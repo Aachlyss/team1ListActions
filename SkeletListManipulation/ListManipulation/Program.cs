@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -23,13 +23,18 @@ namespace ListManipulation
                         nums.Add(int.Parse(cmd[1]));
                         Console.WriteLine(string.Join(" ", nums));
                         break;
+                        
                    case "delete":
+
                         if (nums.Contains(command[1]))
                         {
                             nums.Remove(command[1]);
                         }
-                        //DUSHI KURO
-                            break;
+
+
+                        break;
+
+
                     case "remove":
                         var index = int.Parse(cmd[1]);
                         nums.RemoveAt(index);
@@ -41,7 +46,11 @@ namespace ListManipulation
                             nums.Insert(index, int.Parse(cmd[i]));
                         }
                         break;
-                        //vzdgdzvbcbkjckjcd
+
+                    case "odds":
+                        Console.WriteLine("CountOdd");
+                        break;
+
                     //TODO
                     case "print":
                         Console.WriteLine(string.Join(' ', nums));
@@ -49,6 +58,9 @@ namespace ListManipulation
                     case "printodds":
                         Console.WriteLine(string.Join(' ', nums.Where(x => x % 2 != 0)));
                         break;
+
+                        //vzdgdzvbcbkjckjcd
+
                     default:
                         break;
                 }
@@ -57,3 +69,4 @@ namespace ListManipulation
         }
     }
 }
+
