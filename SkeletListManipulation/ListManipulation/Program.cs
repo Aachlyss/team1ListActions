@@ -42,7 +42,7 @@ namespace ListManipulation
                         }
                         break;
                     case "odds":
-                        Console.WriteLine("SUIIIIIIII");
+                        Console.WriteLine("CountOdd");
                         break;
 
                     //TODO
