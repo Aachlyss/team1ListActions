@@ -41,7 +41,7 @@ namespace ListManipulation
                             nums.Insert(index, int.Parse(cmd[i]));
                         }
                         break;
-
+                        //vzdgdz
                     //TODO
                     case "print":
                         Console.WriteLine(string.Join(' ', nums));
